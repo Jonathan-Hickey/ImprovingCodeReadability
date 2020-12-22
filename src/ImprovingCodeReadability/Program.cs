@@ -10,16 +10,16 @@ namespace ImprovingCodeReadability
         {
             string input = Console.ReadLine();
             int arrayLength = Convert.ToInt32(input);
-            int[] array = new int[arrayLength];
-
-            FillArrayWithNumbers(arrayLength, array);
+            
+            var array = CreateArrayFilledWithNumbers(arrayLength);
             ReverseArray(array);
             PrintArray(array);
         }
 
-        static int[] FillArrayWithNumbers(int arrayLength, int[] array)
+        static int[] CreateArrayFilledWithNumbers(int arrayLength)
         {
-            for (int index = 0; index < arrayLength; index++)
+            int[] array = new int[arrayLength];
+            for (int index = 0; index < array.Length; index++)
             {
                 array[index] = index;
             }
