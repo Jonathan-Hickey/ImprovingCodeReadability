@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImprovingCodeReadability", "src\ImprovingCodeReadability\ImprovingCodeReadability.csproj", "{4A352ADB-3ADE-45BC-8444-6D9B042767C9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{57A48CDB-1E92-4EDA-8E2F-3C6591DA8F60}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57A48CDB-1E92-4EDA-8E2F-3C6591DA8F60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A352ADB-3ADE-45BC-8444-6D9B042767C9} = {57A48CDB-1E92-4EDA-8E2F-3C6591DA8F60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {417C0090-80F3-4996-A5B3-7414C3410283}

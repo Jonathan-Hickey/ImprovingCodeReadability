@@ -8,24 +8,25 @@ namespace ImprovingCodeReadability
     {
         static void Main(string[] args)
         {
-            string getnums = Console.ReadLine();
-            int getnum = Convert.ToInt32(getnums);
-            int[] array1 = new int[getnum];
+            string input = Console.ReadLine();
+            int arrayLength = Convert.ToInt32(input);
+            int[] array = new int[arrayLength];
 
-            GenerateNum(getnum, array1);
-            RevArray(array1);
-            PrintArray(array1);
+            FillArrayWithNumbers(arrayLength, array);
+            ReverseArray(array);
+            PrintArray(array);
         }
-        static int[] GenerateNum(int getnums, int[] array)
-        {
 
-            for (int index = 0; index < getnums; index++)
+        static int[] FillArrayWithNumbers(int arrayLength, int[] array)
+        {
+            for (int index = 0; index < arrayLength; index++)
             {
                 array[index] = index;
             }
             return array;
         }
-        static int[] RevArray(int[] array)
+
+        static int[] ReverseArray(int[] array)
         {
             for (int index = 0; index < (array.Length) / 2; index++)
             {
